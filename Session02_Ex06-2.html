@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session02_Ex06-2</title>
+    <style>
+        form{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ten,email,dt,ngay,time,number{
+            margin-bottom: 1px;
+        }
+    </style>
+</head>
+<body>
+    <form action="https://api.gateway.com" style="text-align: left; ">
+        <label for="booking"><h1 id="booking">Booking Form</h1></label>
+        <div id="ten">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Username">
+        </div>
+        <br>
+        <div id="email">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email"placeholder="abc123@gmail.com">
+        </div>
+        <br>
+        <div id="dt">
+            <label for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" placeholder="123-4567-1234"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+        </div>
+        <br>
+        <div id="ngay">
+            <label for="date">Date:</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <br>
+        <div id="time">
+            <label for="time">Time:</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <br>
+        <div id="number">
+            <label for="number">Number of Guests:</label>
+            <input type="number" name="number" id="number" min="0" max="1000" placeholder="0-1000">
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>
